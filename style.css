@@ -1,0 +1,130 @@
+*, *:before, *:after {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  background-color: #bd86f0;
+  color: #632713;
+}
+strong {
+  font-weight: bold;
+}
+.green {
+  color: #000099;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+.page-content {
+  font-family: Georiga, serif;
+  line-height: 1.3;
+  padding: 30px 30px 0 30px;
+}
+.page-content p {
+  margin-bottom: 1em;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.3;
+  display: inline-block;
+  background-image: linear-gradient(#666, #666);
+  background-repeat: no-repeat;
+  background-size: 98% 1px;
+  background-position: center bottom 25%;
+  margin: 10px;
+}
+h2 {
+   margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: grid;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0;
+  grid-template-columns: [col] 16% [col] 16% [col] 16% [col] 16% [col] 16% [col] 16%;
+  grid-template-rows: [row] auto [row] auto [row] auto [row];
+/*   grid-auto-columns: 100px; */
+}
+
+.page-cat {
+  grid-column: col / span 4;
+  grid-row: row ;
+  padding-top: 20px;
+}
+.page-credits {
+  grid-column: col 5 / span 2;
+  grid-row: row ;
+  padding-top: 20px;
+}
+.page-header {
+  grid-column: col 1 / span 4;
+  grid-row: row 2;
+  
+  padding: 50px 0 20px;
+}
+.page-hero {
+  grid-column: col / span 6;
+  grid-row: row 3;
+  
+  display: flex;
+  flex-direction: row;
+}
+.page-content {
+  grid-column: col / span 4;
+  grid-row: row 4;
+  
+  column-count: 2;
+  column-gap: 20px;
+}
+.page-sidebar {
+  font-family: Courier New, serif;
+  font-size: 18px;
+  grid-column: col 5 / span 2;
+  grid-row: row 4;
+  margin-top: -340px;
+}
+.page-decoration {
+  grid-column: col 5 / span 1;
+  background-color: #fff;
+  grid-row: row 1 / span 4;
+  width: 20px;
+  z-index: -1;
+  margin-left: -30px;
+}
+
+.page-hero figure {
+ 
+}
+aside {
+  padding: 0 0 0 15px;
+  font-family: Courier New, serif;
+  grid-column: col 5 / span 2;
+  grid-row: row 3;
+  max-width: 640px;
+}
+aside p {
+  font-size: 18px;
+}
+.page-credits {
+  font-size: 13px;
+  display: flex;
+}
+.page-credits p:first-of-type {
+  padding-right: 20px;
+}
+.page-credits span {
+  font-size: 10px;
+  text-transform: uppercase;
+  display: block;
+}
